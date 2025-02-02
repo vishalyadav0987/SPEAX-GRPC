@@ -1,0 +1,67 @@
+.button-scroll-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+  width: 50%;
+}
+
+.scroll-arrow {
+  background-color: transparent;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  color: rgb(0, 0, 0, 0.4);
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  flex: 1;
+  padding: 10px;
+  border-radius: 50px;
+
+}
+
+.button-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-button {
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  background-color: transparent;
+  border-radius: 16px;
+  padding: 6px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #2e2d2d;
+}
+
+.scrollable-button:hover {
+  background-color: #f0f0f0;
+}
+
+
+/********************************/
+/*      Responsive css          */
+/********************************/
+
+@media (max-width:750px) {
+  .button-scroll-container{
+    gap: 0;
+    width: 85%;
+  }
+  .scroll-arrow{
+    padding: 6px;
+  }
+  .button-wrapper{
+    gap: 6px;
+  }
+}
